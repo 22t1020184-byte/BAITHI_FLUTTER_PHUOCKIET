@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/login_page.dart';
 import 'home_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +29,9 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const HomePage(),
+
+      // 👇 mở form đăng nhập trước
+      home: const LoginPage(),
     );
   }
 }
